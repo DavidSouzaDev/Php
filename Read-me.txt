@@ -1,0 +1,45 @@
+INSTALAÇÃO
+
+1 - Para instalar o plugin basta ir até a aba plugins no wordpress e selecionar adicionar novo.
+2 - Clique no botão Carregar Plugin.
+3 - Clique no botão Escolher Arquivo.
+4 - Selecione o arquivo compactado(ZIP) com o nome de Areco Frame Renderization e clique em Ok.
+5 - Clique no botão Instalar agora.
+6 - Após a instalação ser concluída clique em Ativar Plugin.
+7 - Repare que no menu do wordpress apareceu uma opção de nome Areco Frame Renderization.
+
+
+CONFIGURAÇÃO DA PÁGINA ONDE O FRAME SERÁ EXIBIDO
+
+1 - No menu do wordpress, selecione a opção Apresentação e depois selecione a opção Editor de Temas.
+2 - Do lado direito vá até a opção Selecione o tema a editar e escolha o tema que está sendo usado e clique em Selecionar.
+3 - Em Ficheiros do tema selecione a página que deseja inserir o conteúdo mostrado pelo Frame.
+4 - Após selecionar a página insira no local que deseja que o frame apareça este código a baixo:
+<?php the_content(); ?>
+após iserir a linha de código clique em Atualizar Ficheiro. 
+*Observação: Se for mostrar o Frame em mais de uma página repita o passo 4 da instrução.
+
+
+CONFIGURAÇÃO DA CHAMADA DO FRAME
+
+1 - No menu do wodpress selecione a opção Páginas e clique em Nova Página.
+2 - De um título a página.
+3 - No conteúdo da página adicione um Shortcode, Pesquise nos blocos um ícone como este [/] e o selecione.
+4 - Coloque dentro deste bloco o seguinte código:
+[renderContentPage]
+e salve a página.
+
+CONFIGURANDO O CONTEÚDO QUE SERÁ EXIBIDO NO FRAME
+1 - No menu do wordpress, selecione a opção Areco Frame Renderization
+2 - No campo Link insira o link ou ip onde sua aplicação ou site está sendo fornecido.
+3 - No campo Port insira caso houver a porta onde a aplicação ou site está sendo fornecido.
+4 - No campo Height insira a altura que o Frame será exibido, em pixels ou porcentagem por exemplo: 100%.
+5 - No campo Width insira a largura que o Frame será exibido, em pixels ou porcentagem por exemplo: 100%:
+6 - Clique em Configure.
+
+Pronto sua aplicação estará pronta para ser exibida em sua aplicação wordpress.
+
+
+
+
+ 
